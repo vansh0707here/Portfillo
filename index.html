@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paras | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">Vansh<span>.</span></a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h1 class="hero-title">Hi, I’m <span class="accent">Vansh</span></h1>
+      <p class="hero-subtitle">B.Tech CSE Student • MERN Stack Developer • Future Google SWE</p>
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+    </div>
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container grid-2">
+      <img src="vansh.jpg" alt="Profile picture" class="about-img" />
+      <div>
+        <h2 class="section-title">About Me</h2>
+        <p>I’m Vansh, a B.Tech student in Computer Science with a strong foundation in front-end (HTML, CSS, Bootstrap),
+          back-end (Python, MySQL), and MERN stack development. I’m actively building industry-grade projects and aiming
+          to land a Software Engineering role at Google with a 50 LPA package.</p>
+        <p>Currently focused on mastering full-stack development, exploring AI/ML, and preparing for elite placements.
+          When I’m not coding, I’m either leveling up my mindset, diving into performance cars, or on a personal growth
+          journey through discipline, health, and higher self-alignment.</p>
+        <a href="#contact" class="btn">Let’s Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title text-center">Featured Projects</h2>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Automated Class Scheduler</h3>
+            <p>Hackathon project to auto-generate conflict-free class schedules using logic and data structure
+              optimization.</p>
+            <a href="#" class="project-link" target="_blank" rel="noopener">Live Demo →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-info">
+            <h3>Responsive Portfolio Website</h3>
+            <p>A modern personal portfolio using HTML, CSS, JavaScript and GSAP animations—this very site!</p>
+            <a href="#" class="project-link" target="_blank" rel="noopener">View Project →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="container text-center">
+      <h2 class="section-title">Let’s Connect</h2>
+      <p>Want to collaborate or talk code, cars, or growth? Drop me a message anytime.</p>
+      <a href="mailto:dhimanvansh398@gmail.com" class="btn btn-primary">dhimanvansh398@gmail.com</a>
+      <a href="https://www.linkedin.com/in/vansh0707/" class="btn" target="_blank">LinkedIn</a>
+      <a href="https://github.com/vansh0707here" class="btn" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© <span id="year"></span> Vansh. Made with discipline, ambition, and coffee ☕</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
